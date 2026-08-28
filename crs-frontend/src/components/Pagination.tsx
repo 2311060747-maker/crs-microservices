@@ -12,6 +12,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
                 disabled={currentPage === 0}
                 onClick={() => onPageChange(currentPage - 1)}
             >
+
                 « Trang truoc
             </button>
             {pages.map((p) => (

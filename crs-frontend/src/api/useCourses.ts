@@ -31,6 +31,7 @@ export function useCourses(keyword: string, page: number, size = 10) {
                         message = 'Khong ket noi duoc toi he thong. Vui long thu lai sau.';
                     }
                 }
+
                 setErrorMessage(message);
                 setState('error');
             });

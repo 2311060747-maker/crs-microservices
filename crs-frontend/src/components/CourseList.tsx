@@ -34,6 +34,7 @@ export default function CourseList({ courses, state, errorMessage, onRetry }: Co
                 </thead>
                 <tbody>
 
+
             {courses.map((course) => (
                 <tr key={course.id} style={{ borderBottom: '1px solid #eee' }}>
 
