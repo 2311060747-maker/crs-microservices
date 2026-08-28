@@ -19,7 +19,6 @@ export default function SearchBox({ onSearch, placeholder }:
             onChange={(e) => setInputValue(e.target.value)}
             placeholder={placeholder ?? 'Tim kiem theo ten mon hoc...'}
             style={{
-
                 width: '100%',
                 maxWidth: 400,
                 padding: '8px 12px',

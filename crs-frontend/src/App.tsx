@@ -13,6 +13,7 @@ function App() {
         setPage(0); // moi lan tim kiem moi, luon quay ve trang dau
     };
     return (
+
         <div style={{ padding: 24, fontFamily: 'sans-serif', maxWidth: 800, margin: '0 auto' }}>
             <h1>Danh sach mon hoc</h1>
             <SearchBox onSearch={handleSearch} />
