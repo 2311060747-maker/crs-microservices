@@ -1,5 +1,8 @@
 import axiosClient from './axiosClient';
 import type { Course, PagedResponse, CourseFormValues } from '../types/course';
+export const getCourseById = (id: number) => {
+    return axiosClient.get<Course>(`/api/courses/${id}`);
+};
 export const getCourses = (keyword?: string, page = 0, size = 10) => {
     return axiosClient.get<PagedResponse<Course>>('/api/courses', {
         params: { keyword, page, size },
